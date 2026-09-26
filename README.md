@@ -1,16 +1,22 @@
 # labs-writeups
 
-Writeup'ы пройденных лабораторий и CTF. Каждый writeup = доказательство понимания уязвимости, а не копипаста решения.
+Writeup'ы пройденных лабораторий, CTF и разборы CVE. Каждый writeup = доказательство
+понимания уязвимости, а не копипаста решения.
 
 ## Структура
-- `portswigger/` — лабы Web Security Academy (по типам: sqli, xss, ssrf...)
+
+- `cve/` — разборы CVE и серии. Сейчас идёт серия
+  [September 2026 Zero-Days](./cve/series-september-2026/) (ALPC + link following)
+- `til/` — короткие «сегодня узнал»: подводные камни GitHub Actions, GraphQL,
+  Vite, сборка Go
+- `portswigger/` — лабы Web Security Academy (sqli, xss, ssrf...)
 - `tryhackme/` — комнаты
 - `ctf/` — picoCTF и прочее
 
 ## Шаблон
 
 ```markdown
-# <Название лабы> — <тип уязвимости>
+# <Название> — <тип уязвимости>
 
 **Сложность:** ...  **Дата:** ...
 
@@ -30,4 +36,5 @@ GET /?q=' OR 1=1-- HTTP/1.1
 ```
 
 ## Disclaimer
+
 Всё тестирование проводилось на лабораторных стендах, разрешённых для практики.
